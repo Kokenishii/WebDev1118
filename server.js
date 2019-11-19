@@ -1,6 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const fileUpload = require('express-fileupload');
+const PORT = process.env.PORT || 5000;
+
+
+
 require('dotenv').config();
 
 const recipeModel = require('./api/recipe.model');
